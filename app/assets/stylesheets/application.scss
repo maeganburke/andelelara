@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+@import
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+  background: url(background.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+//insta
+#icons {
+  margin-right: 20px;
+  float: right;
+   img {
+    // background-color: rgba(255,255,255, 0.5);
+    padding: 5px;
+    margin: 10px;
+    height: 65px;
+    border-radius: 3px;
+    transition: 1s;
+
+  }
+  img:hover {
+    background-color: #EC5273 !important;
+  }
+}
+
+//countdown box
+
+#wrapper {
+  position: absolute;
+  width: 60%; 
+  background-color: rgba(0,0,0, .65);
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.jumbotron {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+
+#content {
+  text-align: center;
+  color: white;
+  height: 220px;  
+  background-color: rgba(0,0,0,0);
+  position: relative;
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 74px;
+    color: #EC5273;
+  }
+  p {
+    margin-top: 15px;
+    font-family: 'Slabo 27px', serif;
+  }
+}
+
+#email {
+    width: 350px;
+    font-family: 'Slabo 27px', serif;    
+    border: 2px solid #EC5273;
+    border-radius: 5px;
+    height: 40px;
+    margin: 15px 0 5px 205px;
+}
+
+#notice {
+  font-size: 15px;
+  font-family: 'Dancing Script', cursive; 
+}
+
+#questions {
+  margin-left: 17px;
+  margin-bottom: 25px;
+  float: left;
+  height: 20px;
+  a {
+    font-family: 'Slabo 27px', serif; 
+    font-size: 30px;
+    color: white;  
+    transition: 2s;
+    height: 50px;
+  }
+  a:hover {
+    color: #EC5273;
+    text-decoration: none;  
+  }
+}
