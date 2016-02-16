@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/amro/gibbon.git
+  revision: 3ea79734f69131efecae08bb4666bbcb273da4d9
+  specs:
+    gibbon (2.2.1)
+      faraday (>= 0.9.1)
+      multi_json (>= 1.11.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -57,7 +65,10 @@ GEM
     concurrent-ruby (1.0.0)
     debug_inspector (0.0.2)
     erubis (2.7.0)
+    excon (0.45.4)
     execjs (2.6.0)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -73,10 +84,14 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mailchimp-api (2.0.6)
+      excon (>= 0.16.0)
+      json (>= 1.7.7)
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
+    multipart-post (2.0.0)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     pg (0.18.4)
@@ -157,8 +172,10 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.1.0)
+  gibbon!
   jbuilder (~> 2.0)
   jquery-rails
+  mailchimp-api (~> 2.0, >= 2.0.6)
   pg
   rails (= 4.2.5)
   rails_12factor
