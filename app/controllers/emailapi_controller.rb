@@ -9,7 +9,7 @@ class EmailapiController < ApplicationController
 
 	    gb.lists.subscribe({
 	      :id => @list_id,
-	      :email => {:email => params[:email][:address]}
+	      :email => {:email => params[:email]}
 	      })
 	end
 
