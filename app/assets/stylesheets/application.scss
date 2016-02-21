@@ -16,7 +16,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-html {
+body {
   background: url(background.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -37,10 +37,8 @@ html {
 
 //insta
 #icons {
-  margin-right: 20px;
   float: right;
    img {
-    // background-color: rgba(255,255,255, 0.5);
     padding: 5px;
     margin: 10px;
     height: 65px;
